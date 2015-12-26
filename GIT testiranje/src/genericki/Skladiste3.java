@@ -10,7 +10,7 @@ public class Skladiste3<T> {
 		// TODO Auto-generated method stub
 		Skladiste3<Automobil> bmw = new Skladiste3<Automobil>(new Automobil());
 		Automobil mercedes = bmw.get();		// Konverzija tipa nije potrebna
-		
+		// Pokusaj da se stavi na GIT
 	}
 
 }

@@ -2,6 +2,7 @@
 package genericki.kafa;
 
 import java.util.*;
+
 import net.mindview.util.*;
 
 //Implementacijom Iterable se omogucava prolazk foreach perljom
@@ -29,7 +30,7 @@ public class GeneratorKafe implements Generator<Kafa>, Iterable<Kafa>{
 	class IteratorKafa implements Iterator<Kafa>{
 		int broj = velicina;
 		public boolean hasNext() { return broj > 0;}
-		public Kafa sledeci(){
+		public Kafa next(){
 			broj--;
 			return GeneratorKafe.this.sledeci();
 		}
